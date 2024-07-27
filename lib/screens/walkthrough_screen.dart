@@ -21,15 +21,14 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              // color: Colors.amber,
-              child: Image.asset(ImageConsants.walkthroughImage),
-            ),
+            const Spacer(),
+            Image.asset(ImageConsants.walkthroughImage),
             vGap(5),
             const Text(
               'View and buy',
               textAlign: TextAlign.center,
               style: TextStyle(
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -39,6 +38,7 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
               'Medicine online',
               textAlign: TextAlign.center,
               style: TextStyle(
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -61,14 +61,25 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text('Skip'),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(
-                      FontAwesome.circle_dot,
-                      size: 15,
-                    ),
-                  ],
+                SizedBox(
+                  width: 50,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        FontAwesome.circle_dot,
+                        size: 15,
+                      ),
+                      Icon(
+                        FontAwesome.circle_dot,
+                        size: 15,
+                      ),
+                      Icon(
+                        FontAwesome.circle_dot,
+                        size: 15,
+                      ),
+                    ],
+                  ),
                 ),
                 Text('Next'),
               ],
