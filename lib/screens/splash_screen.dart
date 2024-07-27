@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
             left: 0,
             right: 0,
             child: Image.asset(
-              ImageConsants.backgroundImage,
+              ImageConstants.backgroundImage,
               alignment: Alignment.center,
               fit: BoxFit.cover,
             ),
@@ -43,8 +43,8 @@ class _SplashScreenState extends State<SplashScreen> {
               CircleAvatar(
                 radius: 30,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Image.asset(ImageConsants.logoImage),
+                  padding: const EdgeInsets.all(10.0),
+                  child: Image.asset(ImageConstants.logoImage),
                 ),
               ),
               vGap(10),

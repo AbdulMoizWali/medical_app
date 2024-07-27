@@ -3,7 +3,6 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:medical_app/constants/image_consants.dart';
 import 'package:medical_app/helpers/gap.dart';
 import 'package:medical_app/routes/route_path.dart';
-import 'package:medical_app/theme/theme_colors.dart';
 
 class WalkthroughScreen extends StatefulWidget {
   const WalkthroughScreen({super.key});
@@ -23,7 +22,7 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Spacer(),
-            Image.asset(ImageConsants.walkthroughImage),
+            Image.asset(ImageConstants.walkthroughImage),
             vGap(5),
             const Text(
               'View and buy',
