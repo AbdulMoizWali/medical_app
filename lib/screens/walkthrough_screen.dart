@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:medical_app/constants/image_consants.dart';
 import 'package:medical_app/helpers/gap.dart';
+import 'package:medical_app/routes/route_path.dart';
 import 'package:medical_app/theme/theme_colors.dart';
 
 class WalkthroughScreen extends StatefulWidget {
@@ -56,12 +57,15 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
               ),
             ),
             const Spacer(),
-            const Row(
+            Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('Skip'),
-                SizedBox(
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Skip'),
+                ),
+                const SizedBox(
                   width: 50,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -81,7 +85,15 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
                     ],
                   ),
                 ),
-                Text('Next'),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(
+                      context,
+                      RoutePath.login,
+                    );
+                  },
+                  child: const Text('Next'),
+                ),
               ],
             )
           ],
