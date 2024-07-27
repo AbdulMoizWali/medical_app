@@ -28,19 +28,19 @@ class ThemeBuilder {
       ),
       iconButtonTheme: IconButtonThemeData(
         style: IconButton.styleFrom(
-          foregroundColor: themeColors.primaryColor,
-          backgroundColor: themeColors.primaryVariantColor,
-          fixedSize: const Size.square(60),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
+          foregroundColor: themeColors.primaryVariantColor,
+          backgroundColor: Colors.transparent,
+          // fixedSize: const Size.square(60),
+          // shape: RoundedRectangleBorder(
+          //   borderRadius: BorderRadius.circular(10),
+          // ),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: themeColors.primaryColor,
+        fillColor: themeColors.primaryVariantColor,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(30),
           borderSide: BorderSide.none,
         ),
       ),
